@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -313,6 +313,370 @@
                             <p style="margin-top: 3px; text-align: left;">1,2월 예산 집행 내역과 후원금 현황이 포함되어 있습니다. 문의사항이 있으시면 언제든지 사무국으로 연락주시기 바랍니다.
                         </p>
                         <a href="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcE7T0j%2FbtsMUqLxQeV%2FskbRAmNslnXpAPTb5KNJuk%2Fimg.jpg" class="tiger-button" target="_blank">상세 보고서 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 푸터 섹션 -->
+        <div class="footer">
+            <div class="footer-links">
+                <strong>DAROO Newsletter</strong> [
+                <a href="#"><span class="icon"></span>Instagram</a> |
+                <a href="#"><span class="icon"></span>Youtube</a> |
+                <a href="#"><span class="icon"></span>Facebook</a> |
+                <a href="#"><span class="icon"></span>Aboutus</a>
+                ]
+            </div>
+            <div class="copyright">
+                Copyright 2012-2025 &copy; Daroo Performing Arts and Culture All Rights Reserved
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+ -->
+
+
+
+
+ <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미주예술원다루 뉴스레터 - 다루 소식지</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #c9e4c5; /* 포스터의 민트 그린 배경색 */
+        }
+        
+        .header {
+           
+            width: 100%;
+            height: 80px;
+            z-index: 1;
+            padding: 0px 0px 0px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #c9e4c5;
+            position: relative;
+            border-bottom: 3px solid #FFC450; /* 노란색 포인트 */
+        }
+        
+        .logo {
+            margin: 20px;
+            width: 70px;
+            z-index: 2;
+        }
+        
+        .newsletter-title {
+            font-size: 20px;
+            color: #333;
+            text-shadow: 1px 1px 0 #FFC450;
+            z-index: 2;
+            margin-right: 5%;
+        }
+        
+        .tiger-bg {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            opacity: 0.5;
+            z-index: 1;
+        }
+        
+        .content {
+            padding: 20px;
+            position: relative;
+            background-image: url('/api/placeholder/800/800'); /* 호랑이 워터마크 이미지가 들어갈 자리 */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+            background-blend-mode: overlay;
+            background-opacity: 0.1;
+        }
+
+        .festival-banner {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            border-bottom: 2px dashed #ff7f9c; /* 핑크 호랑이 색상 */
+            padding-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #222;
+            border-left: 5px solid #ff7f9c; /* 핑크 호랑이 색상 */
+            padding-left: 10px;
+        }
+        
+        .section-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        @media (min-width: 768px) {
+            .section-content {
+                flex-direction: row;
+            }
+            
+            .section-image {
+                width: 40%;
+            }
+            
+            .section-text {
+                width: 60%;
+            }
+        }
+        
+        .section-image {
+            width: 100%;
+        }
+        
+        .section-image img {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .section-text {
+            width: 90%;
+            
+        }
+        
+        .section-text p {
+            line-height: 1.4;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+            color: #FFC450; /* 노란색 포인트 */
+        }
+        
+        .copyright {
+            font-size: 14px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255,255,255,0.5);
+        }
+
+        /* 폰트어썸 아이콘 대체 */
+        /* .icon {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-right: 5px;
+            vertical-align: middle;
+        } */
+
+
+        /* 호랑이 테마 추가 버튼 스타일 */
+        .tiger-button {
+            display: inline-block;
+            background-color: #ff7f9c;
+            color: white;
+            padding: 3px 5px;
+            border-radius: 20px;
+            text-decoration: none;
+            margin-top: 5px;
+            border: 2px solid #333;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .tiger-button:hover {
+            background-color: #FFC450;
+            transform: scale(1.05);
+        }
+
+        /* 다루 소식지 스타일 배너 */
+        .newsletter-header {
+            background-color: #333;
+            padding: 0px;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .newsletter-main-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            text-shadow: 2px 2px 0 #ff7f9c;
+            margin-bottom: 5px;
+        }
+
+        .newsletter-subtitle {
+            font-size: 18px;
+            color: #333;
+        }
+        
+        /* 생일자 스타일 */
+        .birthday-person {
+            padding: 3px 0 3px 0;
+            border-bottom: 1px dotted #ddd;
+        }
+        
+        .birthday-person:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 헤더 섹션 -->
+        <div class="header">
+            <a href="http://www.daroousa.com/en"><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FRXvze%2FbtsMUkEJpFs%2FNwgmHYOTfk77E2wUcWLCM1%2Fimg.png" alt="미주예술원다루 로고" class="logo"></a>
+            <!-- <div class="newsletter-title"  style="text-align: center;"><img style="width: 10%; padding-bottom: 5px;" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbM8Mtu%2FbtsMQgP4vAs%2FMmiiXqnuEqQkzDGZeS2XNK%2Fimg.png"></div> -->
+            </div>
+
+        <!-- 다루 소식지 배너 -->
+        <div class="newsletter-header">
+            <!-- <div class="newsletter-main-title">NEWSLETTER</div>
+            <div class="newsletter-subtitle">Daroo KPAC</div> -->
+            <img style="width: 100%" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FDCCDf%2FbtsMSvLhVJn%2FS5zGzfrxGdyCGS5DLGnqY0%2Fimg.png">
+        </div>
+        
+        <!-- 컨텐츠 섹션 -->
+        <div class="content">
+            <!-- 1. 릭킴회장 수상 -->
+            <div class="section">
+                <h2 class="section-title">수상소식</h2>
+                <div class="section-content">
+                    <div class="section-image">
+                        <a target="_blank" href="https://www.radiok1230.com/news/articleView.html?idxno=601363" alt="Rick kim_Award"><img src="https://cdn.radiok1230.com/news/photo/202503/601363_61804_3715.jpg" alt="일고오창"></a>
+                        <a target="_blank" href="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fba4ONi%2FbtsMWVDTWVZ%2FTdYXenDVqAQnkoJMEzKfBk%2Fimg.jpg" alt="Rick kim"><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fba4ONi%2FbtsMWVDTWVZ%2FTdYXenDVqAQnkoJMEzKfBk%2Fimg.jpg"></a>
+                    </div>
+                    <div class="section-text">
+                        <strong><p style="font-size: 1.1em; line-height: 1.1;">Rick Kim 어흥축제위원장 Global Business Leader of the Year 수상!</p></strong>
+                        <p style="font-size: 1em; margin-top: 10px;">"글로벌 비즈니스 리더 릭 김 대표, 한국 문화 확산에 앞장서다."</p>
+                            
+                        <p>
+                            미주예술원다루는 한국 문화와 예술의 세계화를 위해 다양한 협력을 추진하고 있습니다. 이러한 노력에 발맞춰, ‘Global Business Leader of the Year’에 선정된 릭 김(Rick Kim) 홈쇼핑월드 대표가 K-브랜드의 해외 진출뿐만 아니라 한국 문화의 글로벌 확산에도 적극적으로 기여하고 있어 주목받고 있습니다.</p>
+                            
+                        <a href="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcvxLKz%2FbtsMWZTOo2Z%2FaE24LCuyyXO3pVK6lsAmQk%2Fimg.jpg" target="_blank" class="tiger-button" style="margin-left: 15%;">자세히 보기</a>
+                        <a href="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcvxLKz%2FbtsMWZTOo2Z%2FaE24LCuyyXO3pVK6lsAmQk%2Fimg.jpg" target="_blank" class="tiger-button" style="margin-left: 10%;">기사원문보기</a>
+                    </div>
+                </div>
+            </div>
+                    <!-- 1. 조용수고수 '일고오창' 공연안내 -->
+                    <div class="section">
+                        <h2 class="section-title">조용수고수 '일고오창' 공연안내</h2>
+                        <div class="section-content">
+                            <div class="section-image">
+                                <a target="_blank" href="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fo1uvK%2FbtsMPuGPFss%2FVDGLwBTLK4CCpFmNDvXlb0%2Fimg.jpg"><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fo1uvK%2FbtsMPuGPFss%2FVDGLwBTLK4CCpFmNDvXlb0%2Fimg.jpg" alt="일고오창"></a>
+                            </div>
+                            <div class="section-text">
+                                <strong><p style="font-size: 1.1em;">조용수의 '일고오창' 여섯 번째 鼓 :</p></strong>
+                                <strong><p style="font-size: 1.1em; letter-spacing: -0.05em">고수 조용수, 다섯 제(制)의 수궁에 유(留)하다</p></strong>
+                                    <p style="margin-top: 20px; text-align: left;">고수 조용수의 여섯 번째 독주회 '일고오창'!</p>
+                                    <p style="margin-top: 3px; text-align: left;">판소리 다섯 바탕의 모든 제를 무대에 올리는</p>
+                                    <p style="margin-top: 3px; text-align: left;">프로젝트로 작년 흥보가에 이어 올 해는</p>
+                                    <p style="margin-top: 3px; text-align: left;"> 수궁가의 모든 제를 무대에 올린다.</p>
+                                    <p style="margin-top: 3px; text-align: left;">고수 조용수의 북에 다섯 소리꾼의 다섯 제가</p>
+                                    <p style="margin-top: 3px; text-align: left;">연창으로 이어지는 완창무대이다.</p>
+                                <p style="margin-top: 10px;">
+                                    
+                                <a href="https://www.ntok.go.kr/kr/Ticket/Performance/Details?performanceId=266912" target="_blank" class="tiger-button" style="margin-left: 25%;">공연 예매하기</a>
+                            </div>
+                        </div>
+                    </div>
+            <!-- 2. 생일자 안내  -->
+            <!-- <div class="section">
+                <h2 class="section-title">생일자 안내</h2>
+                <div class="section-content">
+                    <div class="section-image"> -->
+                        <!-- 생일자 이미지 공간 -->
+                        <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTX-7ifeZD5k-afF8y3HYDpFml7ObqzkhBXA&s" alt="생일자 안내">
+                    </div>
+                    <div class="section-text">
+                        <strong><p style="font-size: 1.1em;">3월 생일을 맞이하신 회원분들을 축하합니다!</p></strong>
+                        <div style="margin-top: 15px;"> -->
+                            <!-- <div class="birthday-person">
+                                김○○ (3월 5일) <a href="sms:birthday@daroo.com?subject=김○○님 생일축하합니다"><img src="https://cdn-icons-png.flaticon.com/512/12173/12173124.png" style="width: 12%;"></a>
+                            </div> -->
+                            <!-- <div class="birthday-person">
+                                이○○ (3월 12일) <a href="sms:2138201990?subject=이○○님 생일축하합니다" class="tiger-button">축하메시지 보내기</a>
+                            </div>
+                            <div class="birthday-person">
+                                박○○ (3월 18일) <a href="sms:2138201990?subject=박○○님 생일축하합니다" class="tiger-button">축하메시지 보내기</a>
+                            </div>
+                            <div class="birthday-person">
+                                최○○ (3월 25일) <a href="sms:2138201990?subject=최○○님 생일축하합니다" class="tiger-button">축하메시지 보내기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- 3. 회계보고서 -->
+            <div class="section">
+                <h2 class="section-title">회계보고서</h2>
+                <div class="section-content">
+                    <div class="section-image">
+                        <!-- 회계보고서 이미지 공간 -->
+                        <img src="https://cdn-icons-png.flaticon.com/512/1570/1570998.png" alt="회계보고서">
+                    </div>
+                    <div class="section-text">
+                        <strong><p style="font-size: 1.1em;">2025년 1,2월 회계보고서입니다.</p></strong>
+                        <p style="margin-top: 10px;">
+                            자세한 내용은 첨부된 이미지를 확인해 주세요.</p>
+                            <p style="margin-top: 3px; text-align: left;">1,2월 예산 집행 내역과 후원금 현황이 포함되어 있습니다. 문의사항이 있으시면 언제든지 사무국으로 연락주시기 바랍니다.
+                        </p>
+                        <a href="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcE7T0j%2FbtsMUqLxQeV%2FskbRAmNslnXpAPTb5KNJuk%2Fimg.jpg" class="tiger-button" target="_blank" style="margin-left: 25%;">상세 보고서 보기</a>
                     </div>
                 </div>
             </div>
